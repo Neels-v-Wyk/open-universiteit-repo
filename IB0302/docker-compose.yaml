@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  firebird:
+    container_name: firebird
+    image: jacobalberty/firebird
+    environment:
+      - ISC_PASSWORD=ou
+      - FIREBIRD_DATABASE=db
+    ports:
+      - 3050:3050
+    volumes:
+      - ./firebird_data:/firebird/data
+      - ./scripts:/opt
