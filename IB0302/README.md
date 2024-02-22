@@ -1,7 +1,7 @@
 ## Setup
 
 ### Requirements
-You need `docker`, `docker-compose`, `git` and `make`
+You need `docker`, `git` and `make`
 
 ### Make targets
 ```
