@@ -1,11 +1,11 @@
 # TODO: move stuff from the original _LINUX folder to makefile targets here
 start:
-	docker-compose up -d
+	docker compose up -d
 	docker exec -it firebird /bin/bash -c "chmod u+x /opt/*.sh"
 	docker exec -it firebird /bin/bash -c "/opt/create_all_databases.sh"
 
 stop:
-	docker-compose down
+	docker compose down
 	docker rm -v firebird
 
 split:
